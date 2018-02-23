@@ -1,0 +1,16 @@
+body {
+    background-color: goldenrod;
+}
+
+img {
+    width: 25%;
+}
+
+.title {
+    color: yellow;
+}
+
+.tiny_text {
+    font-size: 20px;
+    color: black;
+}
