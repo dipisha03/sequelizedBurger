@@ -8,10 +8,10 @@
 
 * Each crabby patty in the waiting area also has a Devour it! button. When the user clicks it, the crabby patty will move to the right side of the page.
 
-* The app will store every burger in a database, whether devoured or not.
+* The app will store every burger in a database using sequelize, whether devoured or not.
 
 Technologies used: JavaScript | Sequelize | Node | Express | Handlebars
 
 Heroku link: https://immense-scrubland-41087.herokuapp.com/burgers
 
-![Alt text](https://raw.githubusercontent.com/dipisha03/burger/master/public/assets/img/screenshot.png "Burger APP")
+![Alt text](https://raw.githubusercontent.com/dipisha03/sequelizedBurger/master/public/assets/img/Screenshot.png "Burger APP")
