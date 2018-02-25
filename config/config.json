@@ -7,7 +7,10 @@
         "dialect": "mysql"
     },
     "production": {
-        "use_env_variable": "vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "username": "ebvvjoz5nrum9i85",
+        "password": "xd2lg4ge3z8f0kau",
+        "database": "yutecc5sk2xw6t8a",
+        "host": "vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         "dialect": "mysql"
     }
 }
