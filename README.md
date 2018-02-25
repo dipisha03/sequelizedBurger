@@ -2,9 +2,9 @@
 
 🍔 Eat-Da-Burger - CRUD application
 
-* Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+* Eat-Da-Burger is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-* Whenever a user submits a burger's name, the app will display the crabby patty on the left side of the page ~ waiting to be devoured.
+* Whenever a user submits a burger's name, the app will display the crabby patty on the left side of the page waiting to be devoured.
 
 * Each crabby patty in the waiting area also has a Devour it! button. When the user clicks it, the crabby patty will move to the right side of the page.
 
