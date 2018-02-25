@@ -31,11 +31,9 @@
 
       <!-- Burger Content from index.handlebars -->
       {{{body}}}
-
-      <br><br>
-
-      <!-- Input New Burgers Form -->
-      <form action="burger/create" method="POST"> 
+ <!-- Input New Burgers Form -->
+  <br>
+      <form action="/burger/create" method="POST"> 
         
       <!-- Text Area Input -->
         <div class="row">
@@ -44,8 +42,10 @@
 
       <!-- Burger Input Box -->
         <div class="form-group col-md-6">
-           <center><label for="new_burger" class="red_font">Request a new burger and place your order!</label></center>
-           <textarea class="form-control" columns="8" rows="4" id="new_burger" name="burger_name"></textarea>
+          <center>
+            <label for="new_burger" class="red_font">Request a new burger and place your order!</label>
+          </center>
+           <input class="form-control" columns="8" rows="4" id="new_burger" name="burger_name">
         </div>
 
       <!-- Empty Div to help center textarea -->
@@ -58,13 +58,12 @@
         </center>
 
       </form>
-
-      <br>
    
     </div>
 
     <!-- Link in jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
 
   </body>
 </html>

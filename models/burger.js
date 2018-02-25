@@ -1,26 +1,17 @@
-// Dependencies
-var Sequelize = require("sequelize");
+module.exports = function(sequelize, DataTypes) {
+    var Burger = sequelize.define("Burger", {
+        burger_name: DataTypes.STRING,
+        devoured: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        }
+    }, {
+        classMethods: {
+            associate: function(models) {
+                // associations can be defined here
+            }
+        }
 
-// sequelize (lowercase) references our connection to the DB.
-var sequelize = require("../config/connection.js");
-
-// Creates a "burger" model that matches up with DB
-var burger = sequelize.define("burger", {
-    burger_name: {
-        type: Sequelize.STRING
-    },
-    devoured: {
-        type: Sequelize.BOOLEAN
-    },
-    created_at: {
-        type: Sequelize.DATE
-    }
-}, {
-    timestamps: false
-});
-
-// Syncs with DB
-burger.sync();
-
-// Makes the burger model available for other files 
-module.exports = burger;
+    });
+    return Burger;
+};

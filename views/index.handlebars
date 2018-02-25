@@ -8,15 +8,13 @@
     <div id="ready_to_eat">
 
 <!-- Dynamically Insert Ready Burgers Here -->
-    {{#each burgers}}
-    {{#unless devoured}}
-        <form action="burger/eat/{{id}}" method="POST">
-        <div class="input-group">
-            <li class="form-control">{{id}}. {{burger_name}}</li>
-            <span class="input-group-btn">
-            <button class="btn btn-success devour-button" type="submit">Devour It!</button>
-            </span>
-        </div>
+    {{#each burger}}
+    {{#unless this.devoured}}
+        <form method="POST" class="devour-form">
+            <div class="input-group to-eat burgerz">
+                <div class="form-control burger-id" value={{this.id}}><img src="/assets/img/burder0.png"><br>{{this.burger_name}}</div>
+                <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+            </div>
         </form>
     {{/unless}}
     {{/each}}
@@ -29,13 +27,15 @@
     <div id="already_eaten">
 
 <!-- Dynamically Insert Eaten Burgers Here -->
-    {{#each burgers}}
+    {{#each burger}}
     {{#if this.devoured}}
-        <div class="input-group">
-        <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
-        <span class="input-group-btn">
-        <button class="btn btn-info whine-button" type="button">Noms!</button>
-        </span>
+        <div class="input-group burgerz">
+        <div class="form-control ateBurger">
+            <img src="/assets/img/burger1.png">
+            <br>
+        {{this.burger_name}}
+        </div> 
+        <button class="btn btn-info whine-button" type="button" disabled="">Noms!</button>
         </div>
     {{/if}}
     {{/each}}
